@@ -39,8 +39,14 @@ The following **optional** features are implemented:
 
 ## 📹 Video Walkthrough
 
-[Click here to view the walkthrough](https://www.loom.com/)  
-<!-- Replace with your Loom video link once uploaded -->
+<div>
+    <a href="https://www.loom.com/share/5d88418817cd45efb46220b3d6437d27">
+      <p>Videos | Library | Loom - 25 June 2025 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/5d88418817cd45efb46220b3d6437d27">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5d88418817cd45efb46220b3d6437d27-75a6a9d3f081c0eb-full-play.gif">
+    </a>
+  </div>
 
 ---
 
