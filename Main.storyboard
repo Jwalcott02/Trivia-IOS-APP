@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Roz-vw-ju1">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TP6-Xw-dbM">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Roz-vw-ju1" customClass="ViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mdt-Mh-puE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13N-fO-lHx">
+                                <rect key="frame" x="136" y="105" width="113" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP5-FR-89k">
+                                <rect key="frame" x="134.66666666666666" y="158" width="123.66666666666666" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-E6-yb1">
+                                <rect key="frame" x="14" y="206" width="376" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question goes here" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" showsExpansionTextWhenTruncated="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJz-ss-0cf">
+                                        <rect key="frame" x="58" y="59" width="300" height="100"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1fk-TC-Eje"/>
+                                    <constraint firstItem="iJz-ss-0cf" firstAttribute="centerY" secondItem="c4I-E6-yb1" secondAttribute="centerY" id="FMS-uA-F8O"/>
+                                    <constraint firstItem="iJz-ss-0cf" firstAttribute="centerX" secondItem="c4I-E6-yb1" secondAttribute="centerX" constant="-33" id="tW0-e3-VNK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPJ-RM-6Py">
+                                <rect key="frame" x="122.66666666666667" y="418" width="147.66666666666663" height="40.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Restart Trivia">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="restartQuizTapped:" destination="Roz-vw-ju1" eventType="touchUpInside" id="BQx-k8-ab7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZBA-A7-2By">
+                                <rect key="frame" x="16" y="380" width="361" height="161.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfE-aj-Z3g">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Answer Choice A" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="10">
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Roz-vw-ju1" eventType="touchUpInside" id="4pR-qf-I19"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TC-uM-fE5">
+                                        <rect key="frame" x="0.0" y="42.333333333333314" width="361" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Answer Choice B" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="10">
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Roz-vw-ju1" eventType="touchUpInside" id="X0n-So-AiY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2c-bk-SVK">
+                                        <rect key="frame" x="0.0" y="84.666666666666686" width="361" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Answer Choice C" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="10">
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Roz-vw-ju1" eventType="touchUpInside" id="WHl-Wf-4r2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-B7-fY2">
+                                        <rect key="frame" x="0.0" y="126.99999999999999" width="361" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Answer Choice D" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="10">
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Roz-vw-ju1" eventType="touchUpInside" id="O3d-UY-nNb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ecf-Sp-6rq"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="bPJ-RM-6Py" firstAttribute="centerX" secondItem="ecf-Sp-6rq" secondAttribute="centerX" id="C6f-0K-Wsd"/>
+                            <constraint firstItem="eP5-FR-89k" firstAttribute="centerX" secondItem="Mdt-Mh-puE" secondAttribute="centerX" id="Cal-hy-tdj"/>
+                            <constraint firstItem="ecf-Sp-6rq" firstAttribute="trailing" secondItem="ZBA-A7-2By" secondAttribute="trailing" constant="32" id="Htf-sn-gJX"/>
+                            <constraint firstItem="ecf-Sp-6rq" firstAttribute="trailing" secondItem="ZBA-A7-2By" secondAttribute="trailing" constant="16" id="Q65-OR-cBo"/>
+                            <constraint firstItem="ZBA-A7-2By" firstAttribute="leading" secondItem="ecf-Sp-6rq" secondAttribute="leading" constant="16" id="Rye-he-SQV"/>
+                            <constraint firstItem="ZBA-A7-2By" firstAttribute="top" secondItem="c4I-E6-yb1" secondAttribute="bottom" constant="24" id="Usa-kA-cZL"/>
+                            <constraint firstItem="eP5-FR-89k" firstAttribute="top" secondItem="ecf-Sp-6rq" secondAttribute="top" constant="40" id="XDc-XX-Mcq"/>
+                            <constraint firstItem="ZBA-A7-2By" firstAttribute="centerX" secondItem="Mdt-Mh-puE" secondAttribute="centerX" id="aTn-ST-dfu"/>
+                            <constraint firstItem="bPJ-RM-6Py" firstAttribute="centerX" secondItem="Mdt-Mh-puE" secondAttribute="centerX" id="ajo-FT-7ZN"/>
+                            <constraint firstItem="ecf-Sp-6rq" firstAttribute="trailing" secondItem="c4I-E6-yb1" secondAttribute="trailing" constant="16" id="bQ8-11-65c"/>
+                            <constraint firstItem="c4I-E6-yb1" firstAttribute="leading" secondItem="ecf-Sp-6rq" secondAttribute="leading" constant="16" id="d2j-ih-UH0"/>
+                            <constraint firstItem="13N-fO-lHx" firstAttribute="centerX" secondItem="ecf-Sp-6rq" secondAttribute="centerX" constant="-4" id="dOZ-py-jEp"/>
+                            <constraint firstItem="bPJ-RM-6Py" firstAttribute="top" secondItem="ecf-Sp-6rq" secondAttribute="top" constant="300" id="f8s-Ww-blm"/>
+                            <constraint firstItem="c4I-E6-yb1" firstAttribute="top" secondItem="eP5-FR-89k" secondAttribute="top" constant="48" id="g5s-5T-cpI"/>
+                            <constraint firstItem="eP5-FR-89k" firstAttribute="bottom" secondItem="13N-fO-lHx" secondAttribute="top" constant="83" id="sZb-YU-fTt"/>
+                            <constraint firstItem="ZBA-A7-2By" firstAttribute="leading" secondItem="ecf-Sp-6rq" secondAttribute="leading" constant="32" id="vhT-vc-Dga"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton0" destination="mfE-aj-Z3g" id="zlN-id-AgH"/>
+                        <outlet property="answerButton1" destination="9TC-uM-fE5" id="6Ha-rP-bf4"/>
+                        <outlet property="answerButton2" destination="s2c-bk-SVK" id="MjO-dp-YLm"/>
+                        <outlet property="answerButton3" destination="bUw-B7-fY2" id="yTw-KZ-5VH"/>
+                        <outlet property="categoryLabel" destination="13N-fO-lHx" id="0CN-7F-43y"/>
+                        <outlet property="progressLabel" destination="eP5-FR-89k" id="mqL-aM-31Y"/>
+                        <outlet property="questionLabel" destination="iJz-ss-0cf" id="n2X-Io-tVZ"/>
+                        <outlet property="restartButton" destination="bPJ-RM-6Py" id="0eG-F3-F0p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APe-vz-TCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90.839694656488547" y="13.380281690140846"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
